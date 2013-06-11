@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Race Results <%= current_player_one.initials%> vs. <%= current_player_two.initials%> </h1>
+  <p>Results for game # <%=@game.id%></p>
+  <p><%= @game.winner%> won!</p>
+  <p>Your unique URL: <a href="/results/<%=@game.id%>">http://localhost:9393/results/<%=@game.id%></a></p>
+  <p>Race Time: <%= @game.updated_at - @game.created_at %> seconds</p>
+  <a href="/">Return to the main page.</a>
+</div>
